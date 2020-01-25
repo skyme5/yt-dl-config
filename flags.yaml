@@ -1,0 +1,94 @@
+---
+flags:
+  "--add-metadata":
+    - default
+  "--audio-format {AUDIOFORMAT}":
+    - mp3
+    - flac
+  "--audio-quality 0":
+    - audio
+  "--cache-dir":
+    - default
+  "--continue":
+    - default
+  "--convert-subs lrc":
+    - audio
+  "--convert-subs srt":
+    - video
+  "--download-archive ~/.yt-dl/yt.{ARCHIVE}.archive.txt":
+    - video
+    - audio
+  "--embed-subs":
+    - video
+  "--embed-thumbnail":
+    - mp3
+  "--external-downloader aria2c":
+    - default
+  "--external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'":
+    - default
+  "--hls-prefer-ffmpeg":
+    - default
+  "--netrc":
+    - default
+  "--no-warnings":
+    - default
+  "--playlist-reverse":
+    - reverse
+  "--prefer-ffmpeg":
+    - default
+  "--quiet":
+    - default
+  "--restrict-filenames":
+    - default
+  "--sleep-interval 3":
+    - default
+  "--sub-lang en":
+    - video
+  "--verbose":
+    - default
+  "--write-annotations":
+    - video
+  "--write-auto-sub":
+    - video
+  "--write-description":
+    - default
+  "--write-info-json":
+    - default
+  "--write-sub":
+    - video
+  "--write-thumbnail":
+    - default
+  "--yes-playlist":
+    - playlist
+  "--merge-output-format mp4":
+    - video
+  "--youtube-skip-dash-manifest":
+    - default
+  "--output \"/media/drive/b/YouTube/%(uploader)s (%(uploader_id)s)/%(playlist_title)s_%(playlist_index)s_%(upload_date)s_%(title)s_[%(id)s].%(ext)s\"":
+    - output
+  "--output \"/media/drive/b/YouTube/%(uploader)s (%(uploader_id)s)/%(playlist_title)s/%(playlist_title)s_%(playlist_index)s_%(upload_date)s_%(title)s_[%(id)s].%(ext)s\"":
+    - playlist
+    - reverse
+    - channel
+  "--format 'bestvideo+bestaudio/best'":
+    - best
+  "--format 'bestvideo[height<=1080]+bestaudio/best[height<=1080]'":
+    - "1080"
+  "--format 'bestvideo[height<=720]+bestaudio/best[height<=720]'":
+    - "720"
+  "--format 'bestvideo[height<=480]+bestaudio/best[height<=480]'":
+    - "480"
+  "--format 'bestvideo[height<=360]+bestaudio/best[height<=360]'":
+    - "360"
+  "--format 'bestaudio'":
+    - flac
+    - mp3
+
+quality:
+  - best
+  - "1080"
+  - "720"
+  - "480"
+  - "360"
+  - mp3
+  - flac
