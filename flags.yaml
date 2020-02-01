@@ -7,7 +7,7 @@ flags:
     - flac
   "--audio-quality 0":
     - audio
-  "--cache-dir":
+  "--cache-dir ~/.cache/youtube-dl":
     - default
   "--continue":
     - default
