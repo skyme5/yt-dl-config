@@ -6,7 +6,7 @@ def audio
 end
 
 def playlist
-  %w[playlist channel]
+  %w[playlist channel tw]
 end
 
 def video_q
